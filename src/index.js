@@ -36,7 +36,7 @@ ReactDOM.render(
       <Route path="/texts" component={Texts} />
 
 
-      <Route path="/bio" component={ProfilePage1} />
+      <Route path="/nosotros" component={ProfilePage1} />
       <Route path="/" component={Components} />
     </Switch>
   </Router>,
