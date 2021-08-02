@@ -64,10 +64,56 @@ function Components(props) {
   </Navbar.Collapse>
 </Navbar>
 </Router>
-
-    <div>
-   
+<div>
+    <p style={{
+       display: "inline-block",
+       position: "relative",
+      color:"white", 
+      fontSize: "300%",
+      fontFamily: "calichi",
+      fontWeight: "normal",
+      fontStyle: "normal",
+      position: "relative",
+      // backgroundColor: "none",
+      // backgroundImage: `url(${image1})`, //"#000000",
+      opacity: "1.0",   
+      marginLeft: "10%",
+      marginTop: "8%",
+      width: "40%",
+      padding: "0px",
+      border: '1px solid red'
+       }}> 
+       {"IMC"}</p>
        </div>
+       <p style={{
+          display: "inline-block",
+          position: "relative",
+      color:"white", 
+      fontSize: "200%",
+      fontFamily: "calichi",
+      fontWeight: "normal",
+      fontStyle: "normal",
+      position: "relative",
+      // backgroundColor: "none",
+      // backgroundImage: `url(${image1})`, //"#000000",
+      opacity: "1.0",   
+      marginLeft: "35%",
+      marginTop: "9%",
+      width: "45%",
+      padding: "0px",
+      border: '1px solid red'
+       }}> 
+       {"Instituto de Música por Computadora - Puerto Rico"}<br></br>
+      
+       <br></br></p>
+  
+
+
+    
+
+
+   
+ 
        
        
 
