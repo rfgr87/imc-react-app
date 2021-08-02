@@ -50,6 +50,18 @@ export default function ProfilePage1(props) {
 </Navbar>
 </Router>
 
+<div style={{ 
+      position: "absolute",
+      backgroundColor: "black",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: "100%",
+      height: "100%",
+      padddingRigth: "0px",
+      paddingBottom: "100%",
+      margin: 0,
+      padding: 0
+      }}>
 
 <div style={{ 
       position: "relative",
@@ -59,7 +71,7 @@ export default function ProfilePage1(props) {
       backgroundPosition: 'center',
       width: "100%",
       padddingRigth: "0px",
-      paddingBottom: "1000px",
+      paddingBottom: "q00",
       margin: 0,
       padding: 0
       }}>
@@ -142,6 +154,7 @@ export default function ProfilePage1(props) {
       </Row>
       </Container>
       </div>
-    </div>               
+    </div>   
+    </div>            
   );
 }
