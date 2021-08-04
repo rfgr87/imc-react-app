@@ -112,7 +112,7 @@ function Components(props) {
       // backgroundImage: `url(${image1})`, //"#000000",
       opacity: "1.0",   
       marginLeft: "2%",
-      marginTop: "9%",
+      marginTop: "0%",
       width: "45%",
       padding: "0px",
        }}> 
