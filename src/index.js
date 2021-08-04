@@ -34,8 +34,6 @@ ReactDOM.render(
       <Route path="/instrumental" component={Instrumental} />
       <Route path="/scores" component={Scores} />
       <Route path="/cursos" component={Cursos} />
-
-
       <Route path="/nosotros" component={ProfilePage1} />
       <Route path="/" component={Components} />
     </Switch>
