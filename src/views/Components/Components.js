@@ -119,7 +119,21 @@ function Components(props) {
        {"royfguzman@gmail.com"}<br></br>
       
        <br></br></p>
-  
+       <div style={{ 
+        position: "absolute",
+        backgroundImage: `url(${image1})`,
+        backgroundColor: "white",
+        //backgroundColor: "white",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: "100%",
+        width: "100%",
+        padddingRigth: "0px",
+        paddingBottom: "0px",
+        margin: 0,
+        padding: 0
+        
+        }}></div>
 
 
     
