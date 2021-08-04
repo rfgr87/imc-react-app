@@ -35,7 +35,7 @@ export default function Cursos(props) {
       <Nav.Link href="/">Inicio</Nav.Link>
       <Nav.Link href="nosotros">Nosotros</Nav.Link>
       <Nav.Link href="cursos">Cursos</Nav.Link>
-      <NavDropdown title="Works" id="basic-nav-dropdown">
+      <NavDropdown title="Instructores" id="basic-nav-dropdown">
         <NavDropdown.Item href="electro-acoustic">Electro-Acoustic</NavDropdown.Item>        
       </NavDropdown>
     </Nav>

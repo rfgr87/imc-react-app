@@ -47,8 +47,8 @@ function Components(props) {
       <Nav.Link href="/">Inicio</Nav.Link>
       <Nav.Link href="nosotros">Nosotros</Nav.Link>
       <Nav.Link href="cursos">Cursos</Nav.Link>
-      <NavDropdown title="Works" id="basic-nav-dropdown">
-        <NavDropdown.Item href="electro-acoustic">Electro-Acoustic</NavDropdown.Item>
+      <NavDropdown title="Instructor" id="basic-nav-dropdown">
+        <NavDropdown.Item href="electro-acoustic">Roy F Guzmán</NavDropdown.Item>
        
       </NavDropdown>
     </Nav>

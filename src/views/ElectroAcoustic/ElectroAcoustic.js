@@ -1,4 +1,18 @@
-import React from 'react';
+import React from "react";
+// nodejs library that concatenates classes
+import classNames from "classnames";
+// @material-ui/core components
+import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
+
+// @material-ui/icons
+import Camera from "@material-ui/icons/Camera";
+import Palette from "@material-ui/icons/Palette";
+import Favorite from "@material-ui/icons/Favorite";
+// core components
+import GridContainer from "./GridContainer.js";
+import GridItem from "./GridItem.js";
+import NavPills from "./NavPills.js";
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -9,7 +23,6 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Media from 'react-bootstrap/Media';
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,379 +30,320 @@ import {
   useParams,
 } from "react-router-dom";
 
-import image1 from "./glitch5.jpg";
+import styles1 from "./profilePage1.js";
+// import styles2 from "assets/jss/material-kit-react/views/profilePage1.js";
+import styles2 from "./parallaxStyle1.js";
 
 
-function ElectroAcoustic(props) {
-    
-    return (
-      <div style={{ 
-        position: "absolute",
-        backgroundImage: `url(${image1})`,
-        backgroundColor: "white",
-        //backgroundColor: "white",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        width: "100%",
-        padddingRigth: "0px",
-        paddingBottom: "0px",
-        margin: 0,
-        padding: 0
-        
-        }}>
-  <Router>
-  <Navbar bg="light" expand="lg">
-  <Navbar.Brand >Roy F Guzmán</Navbar.Brand>
+import image1 from "./foto-piezaroy1.jpg";
+
+import image2 from "./foto-decolonial1.jpg";
+import profile from "./foto-roy1.png";
+import image3 from "./foto-piezaroy1.jpg";
+
+
+const useStyles1 = makeStyles(styles1);
+const useStyles2 = makeStyles(styles2);
+
+export default function ProfilePage1(props) {
+  const classes = useStyles1();
+  const { ...rest } = props;
+  const imageClasses = classNames(
+    classes.imgRaised,
+    classes.imgFluid
+  );
+ 
+  return (
+    <div style={{ 
+      position: "absolute",
+      backgroundImage: `url(${image1})`,
+      backgroundColor: "black",
+      //backgroundColor: "white",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      height: "400%",
+      width: "100%",
+      padddingRigth: "0px",
+      paddingBottom: "0px",
+      margin: 0,
+      padding: 0
+      
+      }}>
+      <Router>
+  <Navbar bg="dark" variant="light" >
+  <Navbar.Brand color="white">[IMC]</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="bio">Bio</Nav.Link>
-      <NavDropdown title="Works" id="basic-nav-dropdown">
-        <NavDropdown.Item href="abolengo">Abolengo</NavDropdown.Item>
-        <NavDropdown.Item href="electro-acoustic">Electro-Acoustic</NavDropdown.Item>
-        <NavDropdown.Item href="instrumental">Instrumental</NavDropdown.Item>
-        <NavDropdown.Item href="collaborations">Collaborations</NavDropdown.Item>
-        <NavDropdown.Item href="cmepr">CMEPR</NavDropdown.Item>
-        <NavDropdown.Item href="scores">Scores</NavDropdown.Item>
-        <NavDropdown.Item href="texts">Texts</NavDropdown.Item>
-
-
-
+      <Nav.Link href="/">Inicio</Nav.Link>
+      <Nav.Link href="nosotros">Nosotros</Nav.Link>
+      <Nav.Link href="cursos">Cursos</Nav.Link>
+      <NavDropdown title="Instructor" id="basic-nav-dropdown">
+        <NavDropdown.Item href="electro-acoustic">Roy F Guzmán</NavDropdown.Item>
+       
       </NavDropdown>
     </Nav>
    
   </Navbar.Collapse>
 </Navbar>
 </Router>
-    <div>
-    <h5 style={{
-      color:"black", 
-      fontSize: "300%",
-      fontFamily: "Menlo",
-      fontWeight: "normal",
-      fontStyle: "normal",
+        <div>  {/* <div style = {{border: "black", borderWidth: "3px", borderStyle: "outset",backgroundColor: "white", width: "75%", marginLeft: "12.5%", marginTop: "15%"}}> */}
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div>
+            <GridContainer justify="left" >
+              <GridItem xs={12} sm={12} md={6}>
+                <div className={classes.profile}>
+                  <div>
+                    <img src={profile} alt="..." className={imageClasses} />
+                  </div>
+                  <div className={classes.name}>
+                    <h3 className={classes.title}>Roy F Guzmán</h3>
+                    
+                  </div>
+                </div>
+              </GridItem>
+            </GridContainer>
+            <div className={classes.description}>
+              <p>
+              {"Roy F Guzmán - Compositor de música electrónica algorítmica e instrumental, improvisador y poeta nacido en San Juan, Puerto Rico el 28 de junio de 1987."} <br></br><br></br>
+              {"Sus temas de investigaciones previas y actuales son la teoría del caos para material estructural musical, el tema de “abstracciones” trabajado mediante partituras sonoras con instrumentos utilizándolas como una metáfora de la percepción de toda la realidad, “Música a Lo Pobre” que incluye el tema de la resiliencia, la estética que produce las limitaciones auténticas de los sistemas como universal abstracta del folklor, la no dualidad, el concepto de axiomas de objetos conceptuales y físicos, geometrías abstractas en formas musicales, el estudio y formalización de la lectura de partituras no tradicionales, la expansión de la parametrización y constructos musicales, la investigación del concepto de Formas Sonoras Plásticas donde crea técnicas para producir la ilusión de un sólido en un medio temporal con el programa El Cubo De Chuito para manipulación de audio en 3 dimensiones y la creación de música conceptual basada en teorías sobre la espiritualidad abstracta indígena Taina."}<br></br><br></br>
+              {"Recientemente explora la Meta Composición donde se propone que la abstracción perceptual llamada realidad se ve afectada por las estructuras objetuales, constructos nuevos, formas, símbolos y textos composicionales."}<br></br><br></br>
+              {"Creó la Poesía Concreta Multi Semiótica donde se explora el multi semiotismo sincrónico y asincrónico y la Meta Poesía Integral donde se explora el color semiótico como una integral de un multisemiotismo de una gestalt universal popular. También investiga y crea deducciones y creaciones sobre la metafísica de la espiritualidad ancestral latinoamericana y su potencial desarrollo axiomático y abstracto para la creación de nuevos constructos y filosofías que tienen el potencial de alterar la realidad perceptual."}
+              {" "}
+              </p>
+              </div>
+            
+            </div>
+            
+          </div>
+        </div>
+        <div style={{ 
+          position: "absolute",
+          backgroundImage: `url(${image3})`,
+          height: "1900px",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: "100%",
+          padddingRigth: "45px",
+          paddingBottom: "200px",
+          margin: 0,
+          padding: 0}}>
+      <GridContainer justify="center">
+              <GridItem  className={classes.navWrapper}>
+                <NavPills
+                  alignCenter
+                  color="black"
+                  tabs={[
+                    {
+                      tabButton: "Música",
+                      // tabIcon: Camera,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem >
+                          <iframe style = {{
+                            display: "inline-block",
+                            position: "relative",
+                            border: 0, 
+                            width: "300px", 
+                            height: "420px", 
+                            marginTop: "0%",
+                            marginLeft:  "0%"}} 
+                            src="https://bandcamp.com/EmbeddedPlayer/album=97623958/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-28-12-20">sin-título[28-12-20] by Roy F Guzmán</a></iframe>
+                          
+                          <iframe style={{
+                            display: "inline-block",
+                            position: "relative",
+                            border: 0, 
+                            width: "300px", 
+                            height: "420px", 
+                            marginTop: "0%",
+                            marginLeft:  "0%"}} 
+                            src="https://bandcamp.com/EmbeddedPlayer/album=1694358983/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/m">[M] by Roy F Guzman</a></iframe>   
+                         
+                          <iframe style={{
+                            display: "inline-block",
+                            position: "relative",
+                            border: 0, 
+                            width: "300px", 
+                            height: "420px", 
+                            marginTop: "0%",
+                            marginLeft:  "0%"}} 
+                            src="https://bandcamp.com/EmbeddedPlayer/album=4107089838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-10-4-20-3">sin-título[10-4-20][3] by Roy F Guzmán</a></iframe> 
+                          <iframe style={{
+                            display: "inline-block",
+                            position: "relative",
+                            border: 0, 
+                            width: "300px", 
+                            height: "420px", 
+                            marginTop: "0%",
+                            marginLeft:  "0%"}} 
+                            src="https://bandcamp.com/EmbeddedPlayer/album=3480594853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/abstracciones-de-puerto-rico-para-cuarteto-de-cuerdas">Abstracciones de Puerto Rico para Cuarteto de Cuerdas by Roy F Guzmán</a></iframe>         
+                          <iframe  style={{
+      display: "inline-block",
+
       position: "relative",
-      backgroundColor: "white",
-      // backgroundImage: `url(${image1})`, //"#000000",
-      opacity: "1.0",   
-      marginLeft: "1%",
-      marginTop: "1%",
-      width: "100%",
-      padding: "0px",
-      border: '1px solid white',
-       }}> 
-       Electro Acoustic<br></br></h5>
-       </div>
+      border: 0, 
+      width: "300px", 
+      height: "420px", 
+      marginTop: "0%",
+      marginLeft:  "0%"}} 
+      src="https://bandcamp.com/EmbeddedPlayer/album=1768060898/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/x-05-x-08-x-2005-265">x = 0.5+x*(-0.8)*(x/[2.005..2.65]) by Roy F Guzmán</a></iframe>      
 
-      
+   
+    <iframe  style={{
+      display: "inline-block",
 
-       <Container justify="center">
-       <Row>
-         <Col> <div style={{ 
-              position: "relative",   
-              backgroundColor: "black",
-              fontSize: "10px",
-              fontFamily: "Menlo",
-              color: "white",
-              height: "100%",
-              borderWidth:1,
-              marginTop: "0%",
-              width: "100%",
-              border: '1px solid white',
-              paddingLeft: "2%",
-              paddingRigth: "2%",
-              paddingTop: "5%"
+      position: "relative",
+      border: 0, 
+      width: "300px", 
+      height: "420px", 
+      marginTop: "0%",
+      marginLeft:  "0%"}} 
+      src="https://bandcamp.com/EmbeddedPlayer/album=4291500311/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/axiom-tica-j-bara-para-cuarteto-de-cuerdas">Axiomática Jíbara para Cuarteto de Cuerdas by Roy F Guzmán</a></iframe>    
+   
+   <iframe style={{
+      display: "inline-block",
 
-              }}>
-              <p>
-              {"sin-título[dd/mm/yy]"}<br></br><br></br>
-              {"These worke are part of a series of work named untitled or sin-título[date] were I am focusing on pure abstract forms in sound and music. In these pieces I tend to stand conceptually with the idea that sounds and music are a-symbolic phenomenological substances and that this art of sounds should be perceived with a synthesis of a concrete, primitive, eidetic and experiential consciousness in order to enjoy the pure forms, the tension and release, without the confusion and obstruction of semiotics. Technical and Aesthetic concepts behind these art music sin-títulopieces. Non thematic geometrical abstraction in electroacoustic algorithmuc composition. The proportions are protagonists with a dislocation of continuity given by apparent non associated sound sources that embraces Webern like sound proposition to a more subtle but still obvious structural aesthetics. This is integrated with a more organic morpholigicaly gestural sound complexes that fuses this dry geometrical proportions to this more organic sound events as well as the integration of a musical gesture that incorporates a slight detachment from a repetitive minimalism. In resume this sin-título pieces navigates in slight development of the edges of electro-acoustic and contemporary musical abstract aesthetic propositions following weberian musical thougth with a thru composed structural aesthetic that focus on a slight detachment of constant movement and evolution without staying in long padded episodes."}<br></br><br></br>
-              </p>
-              </div></Col>
-              
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=382117328/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-10-21-2">sin-título[02-10-21] by Roy F Guzmán</a></iframe>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3924403652/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-17-21-2">sin-título[02-17-21][2] by Roy F Guzmán</a></iframe>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=4106805977/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-19-03-21-1">sin-título[19-03-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
+     position: "relative",
+     border: 0, 
+     width: "300px", 
+      height: "420px", 
+     marginTop: "0%",
+     marginLeft:  "0%"}} 
+     src="https://bandcamp.com/EmbeddedPlayer/album=1983507765/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/congas">congas by Roy F Guzmán</a></iframe>      
+    
+    <iframe style={{
+      display: "inline-block",
 
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2215956715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-19-03-21-2">sin-título[19-03-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2992527658/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-19-03-21-3">sin-título[19-03-21][3] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
+     position: "relative",
+     border: 0, 
+     width: "300px", 
+      height: "420px", 
+     marginTop: "0%",
+     marginLeft:  "0%"}} 
+      src="https://bandcamp.com/EmbeddedPlayer/album=2664903003/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/tito-2">Tito by Roy F Guzman</a></iframe>
+   
+    <iframe style={{
+      display: "inline-block",
 
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3294850889/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-19-03-21-4">sin-título[19-03-21][4] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2239288180/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-17-21-1">sin-título[02-17-21][1] by Roy F Guzmán</a></iframe>  
-        </Col>
-        </Row>
+     position: "relative",
+      border: 0, 
+      width: "300px", 
+      height: "420px",  
+      marginTop: "0%",
+      marginLeft:  "0%"}} 
+      src="https://bandcamp.com/EmbeddedPlayer/album=836594118/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-25-12-20-1">sin-título[25-12-20][1] by Roy F Guzmán</a></iframe> 
+                  
+      <iframe style={{
+      display: "inline-block",
+      position: "relative",
+      border: 0, 
+      width: "300px", 
+      height: "420px",  
+      marginTop: "0%",
+      marginLeft:  "0%"}} 
+      src="https://bandcamp.com/EmbeddedPlayer/album=988926118/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/escardillos-para-trompeta">Escardillos Para Trompeta by Roy F Guzmán</a></iframe>               
 
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=193009962/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-18-21-1">sin-título[02-18-21][1] by Roy F Guzmán</a></iframe>
-        </Col> 
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1711483364/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-18-21-2-2">sin-título[02-18-21][2] by Roy F Guzmán</a></iframe>       
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3695031801/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-19-21-2">sin-título[02-19-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1869122664/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-19-21-1">sin-título[02-19-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=346865073/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-20-21-2">sin-título[02-20-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3558845635/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-20-21-1">sin-título[02-20-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1112221311/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-21-21-2">sin-título[02-21-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3156783174/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-21-21-1-2">sin-título[02-21-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>   
-
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3802095213/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-22-21-2">sin-título[02-22-21][2] by Roy F Guzmán</a></iframe> 
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1237402150/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-02-22-21-1">sin-título[02-22-21][1] by Roy F Guzmán</a></iframe> 
-        </Col>
-        </Row>  
-
-        <Row>
-         <Col> <div style={{ 
-              position: "relative",   
-              backgroundColor: "black",
-              fontSize: "10px",
-              fontFamily: "Menlo",
-              color: "white",
-              height: "100%",
-              borderWidth:1,
-              marginTop: "0%",
-              width: "100%",
-              border: '1px solid white',
-              paddingLeft: "2%",
-              paddingRigth: "2%",
-              paddingTop: "6%"
-              }}>
-              <p>
-              {"[criollo-yu] [criollo-yu-ita] [criollo-ita]"}<br></br><br></br>
-              {"These criollo-yu, criollo-ita and criollo-yu-ita works are based on a sound arquetipe aesthetic of a white criollo from Puerto Rico."}<br></br><br></br>
-              </p>
-              </div></Col>
-              
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=805728789/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-26-01-21">criollo-yu[26-01-21] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=524606526/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-25-01-21-1">criollo-yu[25-01-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1180833681/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-25-01-21-2">criollo-yu[25-01-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2991163448/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-02-23-21-1">criollo-yu[02-23-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1261462523/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-02-23-21-2">criollo-yu[02-23-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2717334570/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-02-23-21-3-2">criollo-yu[02-23-21][3] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=219896302/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-02-24-21-1">criollo-yu[02-24-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2587528583/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-02-24-21-2">criollo-yu[02-24-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=794949628/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-02-24-21-3">criollo-yu[02-24-21][3] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1109052108/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-12-03-21-1">criollo-yu[12-03-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=800196207/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-13-03-21-2">sin-título[13-03-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1778066505/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-12-03-21-2">criollo-yu[12-03-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=54652033/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-13-03-21-1">sin-título[13-03-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-        
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2018164060/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-14-03-21-2">criollo-yu[14-03-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3328989089/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-14-03-21-1">criollo-yu[14-03-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=478812164/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-25-03-21-1">criollo-yu-ita[25-03-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1886331326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-25-03-21-2">criollo-yu-ita[25-03-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2378880430/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-25-03-21-3">criollo-yu-ita[25-03-21][3] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2667387728/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-ita-26-03-21-1">criollo-ita[26-03-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1343620929/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-ita-26-03-21-2">criollo-ita[26-03-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3532057012/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-ita-26-03-21-3">criollo-ita[26-03-21][3] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=136009491/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-05-04-21-1">criollo-yu-ita[05-04-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=12937101/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-05-04-21-2">criollo-yu-ita[05-04-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>     
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1971791918/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-05-04-21-3">criollo-yu-ita[05-04-21][3] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3887036237/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-05-04-21-4">criollo-yu-ita[05-04-21][4] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>    
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3887036237/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-05-04-21-4">criollo-yu-ita[05-04-21][4] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2000207932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-05-04-21-5">criollo-yu-ita[05-04-21][5] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1061591111/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-ita-05-04-21-6">criollo-yu-ita[05-04-21][6] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=805728789/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/criollo-yu-26-01-21">criollo-yu[26-01-21] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-
-        <Row>
-         <Col> <div style={{ 
-              position: "relative",   
-              backgroundColor: "black",
-              fontSize: "10px",
-              fontFamily: "Menlo",
-              color: "white",
-              height: "100%",
-              borderWidth:1,
-              marginTop: "0%",
-              width: "100%",
-              border: '1px solid white',
-              paddingLeft: "2%",
-              paddingRigth: "2%",
-              paddingTop: "6%"
-              }}>
-              <p>
-              {"salsa[dd/mm/yy]"}<br></br><br></br>
-              {"These pieces are based on salsa sounds. Some are based on an abstraction of the mambo were a fast ongoing energy is always exercised and others are more abstract and structurally contrasting."}<br></br><br></br>
-              </p>
-              </div></Col>
-              
-        
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1181326296/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/salsa-02-25-21-1">salsa[02-25-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2156520661/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/salsa-02-24-21-2">salsa[02-24-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=1907142716/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/salsa-02-24-21-3">salsa[02-24-21][3] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=3309105421/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/salsa-02-27-21-1">salsa[02-27-21][1] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-        <Row>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=2037385952/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/salsa-02-27-21-2">salsa[02-27-21][2] by Roy F Guzmán</a></iframe>
-        </Col>
-        <Col>
-        <iframe style={{border: "0", width: "100%", height: "120px"}} src="https://bandcamp.com/EmbeddedPlayer/album=4118436277/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/salsa-02-27-21-3">salsa[02-27-21][3] by Roy F Guzmán</a></iframe>
-        </Col>
-        </Row>
-
-
-    </Container>
+      <iframe style={{
+      display: "inline-block",
+      position: "relative",
+      border: 0, 
+      width: "300px", 
+      height: "420px",  
+      marginTop: "0%",
+      marginLeft:  "0%"}} 
+      src="https://bandcamp.com/EmbeddedPlayer/album=802527053/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/01-06-21-improvisaciones-con-acorde-n">[01-06-21] Improvisaciones con Acordeón by Roy F Guzmán</a></iframe>                    
+      <iframe style={{
+      display: "inline-block",
+      position: "relative",
+      border: 0, 
+      width: "300px", 
+      height: "420px",  
+      marginTop: "0%",
+      marginLeft:  "0%"}}  
+      src="https://bandcamp.com/EmbeddedPlayer/album=2829187536/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/folclor-abstracto-i">Folclor Abstracto I by Roy F Guzmán</a></iframe>                      
+      </GridItem>      
+      </GridContainer>
+        )
+      }
+                    // {
+                    //   tabButton: "Partituras",
+                    //   // tabIcon: Palette,
+                    //   tabContent: (
+                    //     <GridContainer justify="center">
+                    //       <GridItem xs={12} sm={12} md={4}>
+                    //         <img
+                    //           alt="..."
+                    //           src={work1}
+                    //           className={navImageClasses}
+                    //         />
+                    //         <img
+                    //           alt="..."
+                    //           src={work2}
+                    //           className={navImageClasses}
+                    //         />
+                    //         <img
+                    //           alt="..."
+                    //           src={work3}
+                    //           className={navImageClasses}
+                    //         />
+                    //       </GridItem>
+                    //       <GridItem xs={12} sm={12} md={4}>
+                    //         <img
+                    //           alt="..."
+                    //           src={work4}
+                    //           className={navImageClasses}
+                    //         />
+                    //         <img
+                    //           alt="..."
+                    //           src={work5}
+                    //           className={navImageClasses}
+                    //         />
+                    //       </GridItem>
+                    //     </GridContainer>
+                    //   )
+                    // },
+                    // {
+                    //   tabButton: "Textos",
+                    //   tabContent: (
+                    //     <GridContainer justify="center">
+                    //       <GridItem xs={12} sm={12} md={4}>
+                    //         <img
+                    //           alt="..."
+                    //           src={work4}
+                    //           className={navImageClasses}
+                    //         />
+                    //         <img
+                    //           alt="..."
+                    //           src={studio3}
+                    //           className={navImageClasses}
+                    //         />
+                    //       </GridItem>
+                    //       <GridItem xs={12} sm={12} md={4}>
+                    //         <img
+                    //           alt="..."
+                    //           src={work2}
+                    //           className={navImageClasses}
+                    //         />
+                    //         <img
+                    //           alt="..."
+                    //           src={work1}
+                    //           className={navImageClasses}
+                    //         />
+                    //         <img
+                    //           alt="..."
+                    //           src={studio1}
+                    //           className={navImageClasses}
+                    //         />
+                    //       </GridItem>
+                    //     </GridContainer>
+                    //   )
+                    // }
+                  ]}
+                />
+              </GridItem>
+            </GridContainer>
+            </div>
     </div>
-    )
+  );
 }
-
-  export default ElectroAcoustic
