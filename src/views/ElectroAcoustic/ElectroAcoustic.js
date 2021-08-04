@@ -56,7 +56,6 @@ export default function ProfilePage1(props) {
   return (
     <div style={{ 
       position: "absolute",
-      backgroundImage: `url(${image1})`,
       backgroundColor: "black",
       //backgroundColor: "white",
       backgroundSize: 'cover',
@@ -119,24 +118,23 @@ export default function ProfilePage1(props) {
         </div>
         <div style={{ 
           position: "absolute",
-          backgroundImage: `url(${image3})`,
+          backgroundColor: "black",
           height: "1900px",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: "100%",
           padddingRigth: "45px",
-          paddingBottom: "200px",
+          paddingBottom: "20px",
           margin: 0,
           padding: 0}}>
       <GridContainer justify="center">
               <GridItem  className={classes.navWrapper}>
                 <NavPills
                   alignCenter
-                  color="black"
+                  color="white"
                   tabs={[
                     {
                       tabButton: "Música",
-                      // tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem >
