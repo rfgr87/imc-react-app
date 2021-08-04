@@ -29,7 +29,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/pedagogy" component={Manifesto} />
       <Route path="/abolengo" component={Abolengo} />
-      <Route path="/electro-acoustic" component={ElectroAcoustic} />
+      <Route path="/royfguzman" component={ElectroAcoustic} />
       <Route path="/cmepr" component={CMEPR} />
       <Route path="/instrumental" component={Instrumental} />
       <Route path="/scores" component={Scores} />
