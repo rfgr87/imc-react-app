@@ -26,10 +26,15 @@ const profilePageStyle = {
   main: {
     background: "white",
     position: "relative",
-    zIndex: "3"
+    zIndex: "3",
+    width: "70%",
+    marginLeft: "-5%",
+    paddingLeft: "-5%"
+
+
   },
   mainRaised: {
-    margin: "200px 120px 0px",
+    margin: "8% 15% 8%",
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"

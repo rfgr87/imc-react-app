@@ -60,7 +60,7 @@ export default function ProfilePage1(props) {
       //backgroundColor: "white",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: "400%",
+      height: "1400%",
       width: "100%",
       padddingRigth: "0px",
       paddingBottom: "0px",
@@ -86,7 +86,8 @@ export default function ProfilePage1(props) {
   </Navbar.Collapse>
 </Navbar>
 </Router>
-        <div>  {/* <div style = {{border: "black", borderWidth: "3px", borderStyle: "outset",backgroundColor: "white", width: "75%", marginLeft: "12.5%", marginTop: "15%"}}> */}
+
+
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
             <GridContainer justify="left" >
@@ -119,7 +120,6 @@ export default function ProfilePage1(props) {
               
               {" "}
               </p>
-              </div>
             
             </div>
             
