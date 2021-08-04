@@ -15,7 +15,7 @@ import ElectroAcoustic from "./views/ElectroAcoustic/ElectroAcoustic.js";
 import CMEPR from "./views/CMEPR/CMEPR.js";
 import Instrumental from "./views/Instrumental/Instrumental.js";
 import Scores from "./views/Scores/Scores.js";
-import Texts from "./views/Texts/Texts.js";
+import Cursos from "./views/Cursos/Cursos.js";
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -33,7 +33,7 @@ ReactDOM.render(
       <Route path="/cmepr" component={CMEPR} />
       <Route path="/instrumental" component={Instrumental} />
       <Route path="/scores" component={Scores} />
-      <Route path="/texts" component={Texts} />
+      <Route path="/cursos" component={Cursos} />
 
 
       <Route path="/nosotros" component={ProfilePage1} />
