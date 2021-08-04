@@ -98,6 +98,27 @@ function Components(props) {
        {"Instituto de Música por Computadora - Puerto Rico"}<br></br>
       
        <br></br></p>
+
+       <p style={{
+          display: "inline-block",
+          position: "relative",
+      color:"white", 
+      fontSize: "100%",
+      fontFamily: "calichi",
+      fontWeight: "normal",
+      fontStyle: "normal",
+      position: "relative",
+      // backgroundColor: "none",
+      // backgroundImage: `url(${image1})`, //"#000000",
+      opacity: "1.0",   
+      marginLeft: "2%",
+      marginTop: "9%",
+      width: "45%",
+      padding: "0px",
+       }}> 
+       {"royfguzman@gmail.com"}<br></br>
+      
+       <br></br></p>
   
 
 
