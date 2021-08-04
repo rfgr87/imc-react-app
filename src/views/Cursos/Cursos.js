@@ -206,7 +206,7 @@ export default function Cursos(props) {
               margin: "0px",
               width: "90%",
               height: "100%",
-              padding: "0%",
+              padding: "5%",
               border: '2px solid red'
 
               }}>
