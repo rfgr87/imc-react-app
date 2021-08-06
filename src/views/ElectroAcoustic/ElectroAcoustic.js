@@ -57,18 +57,16 @@ export default function ProfilePage1(props) {
     <div style={{ 
       position: "absolute",
       backgroundColor: "black",
-      //backgroundColor: "white",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: "1400%",
       width: "100%",
+      height: "2000px",
       padddingRigth: "0px",
-      paddingBottom: "0px",
+      paddingBottom: "100%",
       margin: 0,
       padding: 0
-      
       }}>
-      <Router>
+  <Router>
   <Navbar bg="dark" variant="light" >
   <Navbar.Brand color="white">[IMC]</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -77,9 +75,8 @@ export default function ProfilePage1(props) {
       <Nav.Link href="/">Inicio</Nav.Link>
       <Nav.Link href="nosotros">Nosotros</Nav.Link>
       <Nav.Link href="cursos">Cursos</Nav.Link>
-      <NavDropdown title="Instructor" id="basic-nav-dropdown">
-        <NavDropdown.Item href="royfguzman">Roy F Guzmán</NavDropdown.Item>
-       
+      <NavDropdown title="Instructores" id="basic-nav-dropdown">
+        <NavDropdown.Item href="royfguzman">Roy F Guzmán</NavDropdown.Item>        
       </NavDropdown>
     </Nav>
    

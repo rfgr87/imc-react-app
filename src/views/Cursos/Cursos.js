@@ -25,7 +25,18 @@ import image2 from "./image.png";
 export default function Cursos(props) {
  
   return (
-    <div>
+    <div style={{ 
+      position: "absolute",
+      backgroundColor: "black",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: "100%",
+      height: "2000px",
+      padddingRigth: "0px",
+      paddingBottom: "100%",
+      margin: 0,
+      padding: 0
+      }}>
   <Router>
   <Navbar bg="dark" variant="light" >
   <Navbar.Brand color="white">[IMC]</Navbar.Brand>
@@ -44,18 +55,6 @@ export default function Cursos(props) {
 </Navbar>
 </Router>
 
-<div style={{ 
-      position: "absolute",
-      backgroundColor: "black",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      width: "100%",
-      height: "2000px",
-      padddingRigth: "0px",
-      paddingBottom: "100%",
-      margin: 0,
-      padding: 0
-      }}>
 
 
 
@@ -117,6 +116,7 @@ export default function Cursos(props) {
       width: "80%",
       padding: "0px",
        }}> 
+       {"Los cursos tienen costos de $160 por 16 clases de una hora y media."}<br></br><br></br>
        {"Cursos de este semestre son:"}</p>
        </div>
          <Container justify="center">
@@ -275,7 +275,7 @@ export default function Cursos(props) {
       </Row>
       </Container>
       </div>
-    </div>   
+    
                
   );
 }
