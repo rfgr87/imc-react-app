@@ -110,14 +110,11 @@ export default function ProfilePage1(props) {
               {"Recientemente explora la Meta Composición donde se propone que la abstracción perceptual llamada realidad se ve afectada por las estructuras objetuales, constructos nuevos, formas, símbolos y textos composicionales."}<br></br><br></br>
               {"Creó la Poesía Concreta Multi Semiótica donde se explora el multi semiotismo sincrónico y asincrónico y la Meta Poesía Integral donde se explora el color semiótico como una integral de un multisemiotismo de una gestalt universal popular. También investiga y crea deducciones y creaciones sobre la metafísica de la espiritualidad ancestral latinoamericana y su potencial desarrollo axiomático y abstracto para la creación de nuevos constructos y filosofías que tienen el potencial de alterar la realidad perceptual."}<br></br><br></br>
               {"Es el director y creador del CMEPR - Colectivo de Música Experimental de Puerto Rico y el director y creador del IMC - Instituto de Música por Computadora de Puerto Rico"}<br></br><br></br>
-              {"Sus obras an sido colocadas en los festivales New York Electro-Acoustic Festival y SurAural en Chile y an sido tocadas por Jack Quartet, el cuarteto Tabonuco y el CMEPR."}<br></br><br></br>
+              {"Sus obras an sido colocadas en los festivales New York Electro-Acoustic Festival, SurAural en Bolivia, en Laboratorio de Experimentación Aeropuerto en Mexico y an sido tocadas por Jack Quartet, el cuarteto Tabonuco y el CMEPR."}<br></br><br></br>
               {"A contribuido a el sello Archivo 22 bits en Chile con Axiomas Indígenas, a Yuca Tapes-Puerto Rico, a SuperSpace Records en Perú y a sido distinguido en el Concertzender en la radio Electronic Frecuencies en Holanda y actualmente trabaja con otros colectivos y compositores en Puerto Rico cultivando la escena de la música contemporánea y experimental instrumental y electrónica de Puerto Rico."}<br></br><br></br>
               <a href="https://www.royfguzman.com">www.royfguzman.com</a><br></br>
               <a href="https://www.cmepr.net">www.cmepr.com</a><br></br>
               <a href="https://www.royguzman.bandcamp.com">www.royguzman.bandcamp.com</a>
-
-
-              
               {" "}
               </p>
             
