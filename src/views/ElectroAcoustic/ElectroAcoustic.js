@@ -67,7 +67,7 @@ export default function ProfilePage1(props) {
       padding: 0
       }}>
   <Router>
-  <Navbar bg="dark" variant="light" >
+  <Navbar bg="dark" variant="light" expand="lg" >
   <Navbar.Brand color="white">[IMC]</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">

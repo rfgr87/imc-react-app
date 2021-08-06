@@ -26,20 +26,18 @@ function Components(props) {
       <div style={{ 
         position: "absolute",
         backgroundImage: `url(${image1})`,
-        backgroundColor: "white",
-        //backgroundColor: "white",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: "100%",
         width: "100%",
+        height: "250%",
         padddingRigth: "0px",
-        paddingBottom: "0px",
+        paddingBottom: "100%",
         margin: 0,
         padding: 0
         
         }}>
   <Router>
-  <Navbar bg="dark" variant="light" >
+  <Navbar bg="dark" variant="light" expand="lg" >
   <Navbar.Brand color="white">[IMC]</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
@@ -56,7 +54,19 @@ function Components(props) {
   </Navbar.Collapse>
 </Navbar>
 </Router>
-<div>
+<div style={{ 
+        position: "ansolute",
+        backgroundImage: `url(${image1})`,
+        backgroundSize: '500px 500px',
+        backgroundPosition: 'center',
+        width: "100%",
+        height: "100%",
+        padddingRigth: "0px",
+        paddingBottom: "0%",
+        margin: 0,
+        padding: 0
+        
+        }}>
     <p style={{
        display: "inline-block",
        position: "relative",
@@ -76,7 +86,7 @@ function Components(props) {
       border: '1px solid red'
        }}> 
        {"IMC"}</p>
-       </div>
+       
        <p style={{
           display: "inline-block",
           position: "relative",
@@ -96,9 +106,9 @@ function Components(props) {
       border: '1px solid red'
        }}> 
        {"Instituto de Música por Computadora - Puerto Rico"}<br></br>
-      
+       
        <br></br></p>
-
+       
        <p style={{
           display: "inline-block",
           position: "relative",
@@ -119,23 +129,8 @@ function Components(props) {
        {"royfguzman@gmail.com"}<br></br>
       
        <br></br></p>
-       <div style={{ 
-        position: "absolute",
-        backgroundImage: `url(${image1})`,
-        backgroundColor: "white",
-        //backgroundColor: "white",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: "100%",
-        width: "100%",
-        padddingRigth: "0px",
-        paddingBottom: "0px",
-        margin: 0,
-        padding: 0
-        
-        }}></div>
-
-
+       </div>
+       
     
 
 
