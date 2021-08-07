@@ -105,14 +105,14 @@ export default function ProfilePage1(props) {
               fontFamily: "calichi",
               fontWeight: "normal",
               fontStyle: "normal",
-              color: "white",
+              color: "red",
               borderWidth:2,
               borderColor: 'red',
               margin: "0px",
               width: "50%",
               border: '1px solid',
               marginBottom: "10px",
-              padding: "5%"
+              padding: "5%",
 
               }}>
               <p>

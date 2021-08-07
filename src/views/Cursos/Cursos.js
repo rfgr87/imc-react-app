@@ -97,7 +97,12 @@ export default function Cursos(props) {
       width: "80%",
       padding: "0px",
        }}> 
-       {"Los cursos que se ofrecene en el IMC-PR son 1) Pure Data, 2) Composición con soporte digital DAW Reaper, 3) Procesamiento de Señales Digitales, 4) Transductores y Grabaciones de Campo y 5) Super Collider."}</p>
+       {"Los cursos que se ofrecen en el IMC-PR son:"}<br></br>
+       {"1. Pure Data"}<br></br>
+       {"2. Composición con soporte digital DAW Reaper"}<br></br>
+       {"3. Procesamiento de Señales Digitales"}<br></br>
+       {"4. Transductores y Grabaciones de Campo"}<br></br>
+       {"5. Super Collider."}</p>
        </div>
        <div>
          <p style={{
@@ -116,7 +121,7 @@ export default function Cursos(props) {
       width: "80%",
       padding: "0px",
        }}> 
-       {"Los cursos tienen costos de $160 por 16 clases de una hora y media."}<br></br><br></br>
+       {"Cada curso tiene un costos de $160 por 16 clases de una hora y media."}<br></br><br></br>
        {"Cursos de este semestre son:"}</p>
        </div>
          <Container justify="center">
@@ -138,7 +143,7 @@ export default function Cursos(props) {
       width: "80%",
       padding: "0px",
        }}> 
-       {"[Pure Data]"}</p>
+       {"Pure Data"}</p>
        </div>
        </Col>
        <Col>
@@ -159,7 +164,7 @@ export default function Cursos(props) {
       width: "80%",
       padding: "0px",
        }}> 
-       {"[Composición con soporte digital DAW - Reaper]"}</p>
+       {"Composición con soporte digital DAW - Reaper"}</p>
        </div>
        </Col>
        </Row>
