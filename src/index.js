@@ -10,12 +10,12 @@ import { Router, Route, Switch } from "react-router-dom";
 
 import ProfilePage1 from "../src//views/ProfilePage/ProfilePage1.js";
 import Manifesto from "../src/views/Manifesto/Manifesto.js";
-import Abolengo from "./views/Abolengo/Abolengo.js";
 import ElectroAcoustic from "./views/ElectroAcoustic/ElectroAcoustic.js";
-import CMEPR from "./views/CMEPR/CMEPR.js";
 import Instrumental from "./views/Instrumental/Instrumental.js";
 import Scores from "./views/Scores/Scores.js";
 import Cursos from "./views/Cursos/Cursos.js";
+import Media from "./views/Media/Media.js";
+
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -28,12 +28,12 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/pedagogy" component={Manifesto} />
-      <Route path="/abolengo" component={Abolengo} />
       <Route path="/royfguzman" component={ElectroAcoustic} />
-      <Route path="/cmepr" component={CMEPR} />
       <Route path="/instrumental" component={Instrumental} />
       <Route path="/scores" component={Scores} />
       <Route path="/cursos" component={Cursos} />
+      <Route path="/media" component={Media} />
+
       <Route path="/nosotros" component={ProfilePage1} />
       <Route path="/" component={Components} />
     </Switch>
