@@ -60,7 +60,7 @@ export default function ProfilePage1(props) {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       width: "100%",
-      height: "2000px",
+      height: "9000px",
       padddingRigth: "0px",
       paddingBottom: "100%",
       margin: 0,
@@ -105,10 +105,12 @@ export default function ProfilePage1(props) {
               {"Roy F Guzmán - Compositor de música electrónica algorítmica e instrumental, improvisador y poeta nacido en San Juan, Puerto Rico el 28 de junio de 1987."} <br></br><br></br>
               {"Sus temas de investigaciones previas y actuales son la teoría del caos para material estructural musical, el tema de “abstracciones” trabajado mediante partituras sonoras con instrumentos utilizándolas como una metáfora de la percepción de toda la realidad, “Música a Lo Pobre” que incluye el tema de la resiliencia, la estética que produce las limitaciones auténticas de los sistemas como universal abstracta del folklor, la no dualidad, el concepto de axiomas de objetos conceptuales y físicos, geometrías abstractas en formas musicales, el estudio y formalización de la lectura de partituras no tradicionales, la expansión de la parametrización y constructos musicales, la investigación del concepto de Formas Sonoras Plásticas donde crea técnicas para producir la ilusión de un sólido en un medio temporal con el programa El Cubo De Chuito para manipulación de audio en 3 dimensiones y la creación de música conceptual basada en teorías sobre la espiritualidad abstracta indígena Taina."}<br></br><br></br>
               {"Recientemente explora la Meta Composición donde se propone que la abstracción perceptual llamada realidad se ve afectada por las estructuras objetuales, constructos nuevos, formas, símbolos y textos composicionales."}<br></br><br></br>
-              {"Creó la Poesía Concreta Multi Semiótica donde se explora el multi semiotismo sincrónico y asincrónico y la Meta Poesía Integral donde se explora el color semiótico como una integral de un multisemiotismo de una gestalt universal popular. También investiga y crea deducciones y creaciones sobre la metafísica de la espiritualidad ancestral latinoamericana y su potencial desarrollo axiomático y abstracto para la creación de nuevos constructos y filosofías que tienen el potencial de alterar la realidad perceptual."}<br></br><br></br>
+              {"Crea Poesía Concreta Multi Semiótica donde se explora el multi semiotismo sincrónico y asincrónico y la Meta Poesía Integral donde se explora el color semiótico como una integral de un multisemiotismo de una gestalt universal popular. También investiga y crea deducciones y creaciones sobre la metafísica de la espiritualidad ancestral latinoamericana y su potencial desarrollo axiomático y abstracto para la creación de nuevos constructos y filosofías que tienen el potencial de alterar la realidad perceptual."}<br></br><br></br>
               {"Es el director y creador del CMEPR - Colectivo de Música Experimental de Puerto Rico y el director y creador del IMC - Instituto de Música por Computadora de Puerto Rico"}<br></br><br></br>
               {"Sus obras an sido colocadas en los festivales New York Electro-Acoustic Festival, SurAural en Bolivia, en Laboratorio de Experimentación Aeropuerto en Mexico y an sido tocadas por Jack Quartet, el cuarteto Tabonuco y el CMEPR."}<br></br><br></br>
               {"A contribuido a el sello Archivo 22 bits en Chile con Axiomas Indígenas, a Yuca Tapes-Puerto Rico, a SuperSpace Records en Perú y a sido distinguido en el Concertzender en la radio Electronic Frecuencies en Holanda y actualmente trabaja con otros colectivos y compositores en Puerto Rico cultivando la escena de la música contemporánea y experimental instrumental y electrónica de Puerto Rico."}<br></br><br></br>
+              {"Tiene un Bachillerato en Música de Berklee College of Music y estudios de música por computadora y composición en el Instituto de Sonología en La Haya, Paises Bajos donde estudió con Paul Berg y Richard Barrett. A tomado clases magistrales con Christian Wolff"}<br></br><br></br>
+
               <a href="https://www.royfguzman.com">www.royfguzman.com</a><br></br>
               <a href="https://www.cmepr.net">www.cmepr.com</a><br></br>
               <a href="https://www.royguzman.bandcamp.com">www.royguzman.bandcamp.com</a>
