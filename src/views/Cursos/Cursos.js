@@ -31,7 +31,7 @@ export default function Cursos(props) {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       width: "100%",
-      height: "2000px",
+      height: "3000px",
       padddingRigth: "0px",
       paddingBottom: "100%",
       margin: 0,
@@ -242,9 +242,8 @@ export default function Cursos(props) {
               margin: "0px",
               width: "100%",
               height: "600px",
-              border: '1px solid',
-              marginBottom: "10px",
-              padding: "5%"
+              marginBottom: "0px",
+              padding: "0%"
 
               }}>
               <p>
@@ -255,7 +254,7 @@ export default function Cursos(props) {
        
               <Col>  <div style={{ 
 
-              position: "absolute",
+              position: "relative",
               backgroundSize: "100% 100%",
               backgroundImage: `url(${image2})`,
 
@@ -264,7 +263,7 @@ export default function Cursos(props) {
               fontWeight: "normal",
               fontStyle: "normal",
               color: "red",
-              borderWidth:2,
+              borderWidth:0,
               borderColor: 'red',
               margin: "0px",
               width: "100%",
