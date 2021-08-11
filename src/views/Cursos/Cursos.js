@@ -20,7 +20,9 @@ import {
 
 import image1 from "./PureData1.jpg";
 import image2 from "./image.png";
-
+import image3 from "./DSP1.png";
+import image4 from "./DSP2.png";
+import image5 from "./DSP3.png";
 
 export default function Cursos(props) {
  
@@ -104,7 +106,7 @@ export default function Cursos(props) {
        {"2. Composición con soporte digital DAW Reaper"}<br></br>
        {"3. Procesamiento de Señales Digitales"}<br></br>
        {"4. Transductores y Grabaciones de Campo"}<br></br>
-       {"5. Super Collider."}</p>
+       {"5. Super Collider"}</p>
        </div>
        <div>
          <p style={{
@@ -280,7 +282,144 @@ export default function Cursos(props) {
       
       </Row>
       </Container>
+      <Container justify="center">
+      <Row>
+      <Col>  <div>
+    <p style={{
+       display: "inline-block",
+       position: "relative",
+      color:"white", 
+      fontSize: "100%",
+      fontFamily: "Menlo",
+      fontWeight: "normal",
+      fontStyle: "normal",
+      position: "relative",
+      // backgroundColor: "none",
+      // backgroundImage: `url(${image1})`, //"#000000",
+      opacity: "1.0", 
+      marginTop: "5%",  
+      marginLeft: "10%",
+      width: "80%",
+      padding: "0px",
+       }}> 
+       {"DSP - Procesamiento de señales digitales"}</p>
+       </div>
+       </Col>
+       </Row>
+       </Container>
+
+      <Container justify="center">
+      <Row>
+    
+            <Col>  <div style={{ 
+              position: "relative",
+              backgroundSize: "100% 100%",
+              fontSize: "100%",
+              fontFamily: "Menlo",
+              fontWeight: "normal",
+              fontStyle: "normal",
+              color: "white",
+              borderWidth:2,
+              borderColor: 'red',
+              margin: "0px",
+              width: "90%",
+              height: "100%",
+              border: '1px solid red',
+              marginBottom: "10px",
+              padding: "5%"
+
+              }}>
+              <p>
+              {"DSP - Procesamiento de Señales Digitales. En este curso se estarán dando la teoria del procesamiento de señales digitales desde el mecanismo y funcionamiento de la computadora, como registra sonido, teoria de filtros, teoria de sistemas y el Fourier Transform entre otros temas esenciales para el comprendimiento del procesamiento de las señales en la computadora"}<br></br><br></br>
+             
+              </p>
+              </div>   </Col>  
+      </Row>
+      </Container>
+      <Container justify="center">
+      <Row>
+    
+            <Col>  <div style={{ 
+              position: "relative",
+              backgroundSize: "100% 100%",
+              backgroundImage: `url(${image3})`,
+
+              fontSize: "100%",
+              fontFamily: "Menlo",
+              fontWeight: "normal",
+              fontStyle: "normal",
+              color: "black",
+              borderWidth:2,
+              borderColor: 'red',
+              margin: "0px",
+              width: "100%",
+height: "350px",
+              marginBottom: "0px",
+              padding: "0%"
+
+              }}>
+              <p>
+             
+              </p>
+              </div>   </Col>
+           
+       
+              <Col>  <div style={{ 
+
+              position: "relative",
+              backgroundSize: "100% 100%",
+              backgroundImage: `url(${image4})`,
+
+              fontSize: "100%",
+              fontFamily: "Menlo",
+              fontWeight: "normal",
+              fontStyle: "normal",
+              color: "red",
+              borderWidth:0,
+              borderColor: 'red',
+              margin: "0px",
+              width: "100%",
+height: "100%",
+              padding: "0%",
+
+              }}>
+              <p>
+            
+              </p>
+              </div>   </Col>
+
+              <Col>  <div style={{ 
+
+position: "relative",
+backgroundSize: "100% 100%",
+backgroundImage: `url(${image5})`,
+
+fontSize: "100%",
+fontFamily: "Menlo",
+fontWeight: "normal",
+fontStyle: "normal",
+color: "red",
+borderWidth:0,
+borderColor: 'red',
+margin: "0px",
+width: "100%",
+height: "100%",
+padding: "0%",
+
+}}>
+<p>
+
+</p>
+</div>   </Col>
+      
+      </Row>
+      </Container>
+
+
+
+
       </div>
+      
     
                
   );
